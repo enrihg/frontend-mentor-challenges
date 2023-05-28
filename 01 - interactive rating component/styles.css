@@ -115,3 +115,11 @@ p {
 #rate {
     color: yellow;
 }
+
+.disabled {
+    display: none;
+}
+
+.enabled {
+    display: initial;
+}
