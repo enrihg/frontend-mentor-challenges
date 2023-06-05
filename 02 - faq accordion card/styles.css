@@ -1,0 +1,68 @@
+/*CSS reset*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+  
+html, body {
+    height: 100%;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/*CSS variables*/
+
+:root {
+    --clr-primary-900: hsl(238, 29%, 16%);
+    --clr-primary-400: hsl(14, 88%, 65%);
+    --clr-secondary-400: hsl(237, 12%, 33%);
+    --clr-secondary-300: hsl(240, 6%, 50%);
+    --clr-secondary-200: hsl(240, 5%, 91%);
+
+    --ff-general: 'Kumbh Sans', sans-serif;
+    --fs-body: 0.75rem;
+    --fw-regular: 400;
+    --fw-bold: 700;
+}  
+
+/*General styling*/
+
+body {
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    color: var(--clr-secondary-300);
+    font-family: var(--ff-general);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    padding: 9.5rem 1.5rem 5.25rem 1.5rem;
+}
+
+.card-faq {
+    background-color: hsla(0, 0%, 100%, 1);
+    border-radius: 1.5rem;
+    padding: 0 1.5rem 3rem 1.5rem;
+}
+
+.img-woman {
+    position: relative;
+    top: -90px;
+    /* transform: translateY(-60%); */
+    margin: 0 1.3215rem 0 1.3215rem;
+}
+
+h2 {
+    text-align: center;
+    color: var(--clr-primary-900);
+    font-weight: var(--fw-bold);
+    font-size: 2rem;
+}
