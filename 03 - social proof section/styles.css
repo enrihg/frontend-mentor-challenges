@@ -71,7 +71,7 @@ h2 {
     margin-bottom: 1.06rem;
 }
 
-.grid__container>p {
+.grid__child-a>p {
     color: #927B91;
     font-size: 1.1875rem;
     font-weight: var(--fw-medium);
@@ -107,8 +107,8 @@ h2 {
     margin-top: 1rem;
 }
 
-.buyer-card:nth-of-type(4){
-    margin-top: 3.06rem;  
+.grid__child-c {
+    margin-top: 3.06rem;
 }
 
 .buyer-card img {
@@ -133,4 +133,88 @@ h2 {
 .flex {
     display: flex;
     align-items: center;
+}
+
+/*Desktop version*/
+
+@media only screen and (min-width: 90rem) {
+
+    .grid__container {
+        display: grid;
+        grid-template-areas:
+            "a a a b b b"
+            "c c d d e e";
+        /* row-gap: 6.4rem; */
+        row-gap: 5em;
+        width: 76%;
+        max-width: none;
+        margin: 7.38rem auto 0 auto;
+    }
+
+    .grid__child-a {
+        grid-area: a;
+        text-align: left;
+        width: 70%;
+    }
+
+    .grid__child-a>p {
+        margin-bottom: 0;
+    }
+
+    .grid__child-b {
+        grid-area: b;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid__child-c {
+        grid-area: c;
+        margin-top: 0rem;
+        position: relative;
+        bottom: 2rem;
+        padding-right: 1rem;
+    }
+
+    .grid__child-d {
+        grid-area: d;
+        margin-top: 0rem;
+        margin-left: 1.6rem;
+        margin-right: 1.6rem;
+        position: relative;
+        bottom: 1rem;
+    }
+
+    .grid__child-e {
+        grid-area: e;
+        margin-top: 0rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        color: #512051;
+        line-height: 3rem;
+        letter-spacing: -0.125rem;
+    }
+
+    .rating-card {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        padding: 1.25rem 0 1.25rem 2rem;
+        width: 85%;
+    }
+
+    .rating-card div {
+        margin: 0;
+    }
+
+    .rating-card:nth-of-type(1){
+        margin-top: 1.7rem;
+        align-self: flex-start;
+    }
+
+    .rating-card:nth-of-type(3){
+        align-self: flex-end;
+    }
 }
