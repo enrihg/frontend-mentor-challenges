@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Interactive card details form</title>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-child">
+      <img src="images/bg-card-back.png" alt="credit card back">
+      <div class="card-front">
+        0000 0000 0000 0000
+        Jane Appleseed
+        00/00
+        000
+      </div>
+    </div>
+    <form action="#" class="grid-child">
+      <label for="cardholder-name">Cardholder Name</label>
+      <input type="text" id="cardholder-name" placeholder="e.g. Jane Appleseed"></input>
+      <label for="card-number">Card Number</label>
+      <input type="number" id="card-number" placeholder="e.g. 1234 5678 9123 0000"></input>
+      <label for="card-expire">Exp. Date (MM/YY)</label>
+      <div id="card-expire">
+        <input type="number" placeholder="YY"></input>
+        <input type="number" placeholder="MM"></input>
+      </div>
+      <label for="card-cvc">CVC</label>
+      <input type="number" id="card-cvc" placeholder="e.g. 123"></input>
+      <button type="submit">Confirm</button>
+    </form>
+  </div>
+
+  <div>
+    <img src="images/icon-complete.svg" alt="">
+    <h2>Thank you!</h2>
+    <h4>We've added your card details</h4>
+    <button>Continue</button>
+  </div>
+</body>
+</html>
