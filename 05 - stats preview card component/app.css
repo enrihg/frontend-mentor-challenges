@@ -90,3 +90,51 @@ p {
     line-height: 1.5625rem;
     opacity: 0.6;
 }
+
+@media screen and (max-width: 66rem) {
+    
+    body {
+        text-align: center;
+        padding: 5.5rem 1.5rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "top"
+            "bottom";
+        max-width: 36.25rem ;
+    }
+
+    .grid-item-a {
+        margin: 0;
+        padding: 2.5rem 2rem 2rem 2rem;
+    }
+
+    .grid-item-b {
+        justify-self:  center;
+        grid-area: top;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .flex-container {
+        
+        flex-direction: column;
+        gap: 1.5rem;
+        align-content: space-between;
+        padding-right: 0;       
+       
+    }   
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        margin-top: 1.5625rem;
+        margin-bottom: 2.5rem;
+        opacity: 0.6;
+    }
+
+
+}
