@@ -1,0 +1,25 @@
+$bg-primary-color: #151515;
+$bg-secondary-color: #242424;
+$primary-color: #4ee1a0;
+$secondary-color-300: #d9d9d9;
+$secondary-color-100: #ffffff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Space Grotesk', sans-serif;
+    width: 100%;
+    background-color: $bg-primary-color;
+    color: $secondary-color-300;
+    padding: 1rem 1.25rem 1rem 1.25rem;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
