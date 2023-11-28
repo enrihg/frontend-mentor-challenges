@@ -1,0 +1,28 @@
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    width: 100%;
+    background-color: $bg-primary-color;
+    color: $secondary-color-300;
+    padding: 1rem 1.25rem 1rem 1.25rem;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $secondary-color-100;
+    font-weight: 700;
+}
+
+
+p {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: $secondary-color-100;
+}
