@@ -1,7 +1,29 @@
 .section-projects {
+    padding: 5rem 0 5rem 0;
     text-align: left;
-    :first-child {
+
+    div:first-child {
         @include flex-container;
     }
     
+    .project {
+        margin-top: 2.5rem;
+        div {
+            margin: 0.5rem 0 1.25rem 0;
+        }
+    }
+
+    h3 {
+        margin-top: 1.25rem;
+    }
+
+    span {
+        margin-right: 1.125rem;
+        margin-bottom: 3rem;
+    }
+
+    a {
+        margin-right: 2rem;
+        @include border-bottom-green-small;
+    }
 }

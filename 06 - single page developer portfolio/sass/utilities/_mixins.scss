@@ -3,3 +3,12 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+@mixin border-bottom-green-small {
+    padding-bottom: 10px;
+    border-bottom: 2px solid $primary-color;
+}
+
+@mixin border-bottom-green-large {
+    border-bottom: 4px solid $primary-color;
+}
