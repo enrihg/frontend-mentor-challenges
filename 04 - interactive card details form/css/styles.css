@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* --clr-primary-gradient: (hsla(249, 99%, 64%, 1), hsla(278, 94%, 30%, 1)); */
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.125rem;
+}
+
+.cards {
+  padding: 2rem 1rem 0 1rem;
+  background-image: url("/images/bg-main-mobile.png");
+}
+
+.card-front,
+.card-back {
+  max-width: 75%;
+  border-radius: 6px;
+}
+
+.card-front {
+  background-image: url("/images/bg-card-front.png");
+  color: hsl(270, 3%, 87%);
+  padding: 1.1rem 1.31rem 1.29rem 1.31rem;
+}
+
+#cardholder-name,
+#card-number {
+  display: block;
+  width: 100%;
+}
+
+.form {
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.thank-you {
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */
