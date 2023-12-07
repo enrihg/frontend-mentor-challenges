@@ -1,6 +1,7 @@
 .cards {
     padding: 2rem 1rem 0 1rem;
     background-image: url('/images/bg-main-mobile.png');
+    background-size: cover;
 }
 
 .card-front,
@@ -10,12 +11,20 @@
 }
 
 .card-front {
-    
-
-    background-image: url('/images/bg-card-front.png');
-    color: $clr-secondary-200;
     padding: 1.1rem 1.31rem 1.29rem 1.31rem;
+    background-image: url('/images/bg-card-front.png');
+    background-size: cover;
+    color: $clr-secondary-200;
+   
 }
+
+// .card-back {
+//     position: relative;
+//     width: 286px;
+//     height: 157px;
+//     background-image: url('/images/bg-card-back.png');
+//     background-size: cover;
+// }
 
 #cardholder-name,
 #card-number {

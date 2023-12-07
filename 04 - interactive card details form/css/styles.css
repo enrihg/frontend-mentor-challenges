@@ -41,6 +41,7 @@ body {
 .cards {
   padding: 2rem 1rem 0 1rem;
   background-image: url("/images/bg-main-mobile.png");
+  background-size: cover;
 }
 
 .card-front,
@@ -50,9 +51,10 @@ body {
 }
 
 .card-front {
-  background-image: url("/images/bg-card-front.png");
-  color: hsl(270, 3%, 87%);
   padding: 1.1rem 1.31rem 1.29rem 1.31rem;
+  background-image: url("/images/bg-card-front.png");
+  background-size: cover;
+  color: hsl(270, 3%, 87%);
 }
 
 #cardholder-name,
@@ -63,6 +65,35 @@ body {
 
 .form {
   padding: 0 1.5rem 0 1.5rem;
+}
+.form .flex-container {
+  display: flex;
+  flex-direction: row;
+}
+.form input {
+  padding: 0.6875rem 0 0.6875rem 1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid hsl(270, 3%, 87%);
+  color: hsl(279, 6%, 55%);
+}
+.form #card-expire input {
+  max-width: 45%;
+  display: inline;
+}
+.form label {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+}
+.form button {
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  border-style: none;
+  border-radius: 8px;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  font-family: inherit;
+  font-size: 1.125rem;
 }
 
 .thank-you {
