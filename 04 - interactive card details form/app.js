@@ -28,3 +28,7 @@ expireYear.addEventListener('input', (e) => {
 cardCvc.addEventListener('input', (e) => {
     editableCardCvc.textContent = cardCvc.value;
 })
+
+
+//Form Validation
+

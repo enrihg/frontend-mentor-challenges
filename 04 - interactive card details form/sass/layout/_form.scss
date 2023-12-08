@@ -1,27 +1,13 @@
 .form {
     padding: 0 1.5rem 0 1.5rem;
 
-    .flex-container {
-        @include flex;
-    }
-
     input {
         padding: 0.6875rem 0 0.6875rem 1rem;
-        margin-bottom: 0.75rem;
+        // margin-bottom: 0.75rem;
         border-radius: 8px;
         border: 1px solid $clr-secondary-200;
-    
-
         color: $clr-secondary-400;
     }
-
-    #card-expire {
-       input {
-            max-width: 45%;
-            display: inline;
-        }
-    }
-
 
     label {
         font-size: 0.75rem;
@@ -30,5 +16,57 @@
 
     button {
         @include button;
+    }
+
+    .error-message {
+        color: red;
+        font-size: 12px;
+        margin-bottom: 0.75rem;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 25% 25% 50%;
+        grid-template-rows: 25% 50% 25%;
+        grid-template-areas:
+            "a a b"
+            "c d e"
+            "f g h"
+        ;
+
+        :nth-child(1) {
+            grid-area: a;
+        }
+
+        :nth-child(2) {
+            grid-area: c;
+
+        }
+
+        :nth-child(3) {
+            grid-area: f;
+        }
+
+        :nth-child(4) {
+            grid-area: d;
+            margin-left: 8px;
+            margin-right: 11px;
+        }
+
+        :nth-child(5) {
+            grid-area: g;
+        }
+
+        :nth-child(6) {
+            grid-area: b;
+        }
+
+        :nth-child(7) {
+            grid-area: e;
+        }
+
+        :nth-child(8) {
+            grid-area: h;
+        }
     }
 }
