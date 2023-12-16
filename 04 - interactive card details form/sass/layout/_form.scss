@@ -7,6 +7,10 @@
         border-radius: 8px;
         border: 1px solid $clr-secondary-200;
         color: $clr-secondary-400;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     label {
@@ -16,10 +20,22 @@
 
     button {
         @include button;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .success {
+        border-color: $clr-success;
+    }
+
+    .error {
+        border-color: $clr-error;
     }
 
     .error-message {
-        color: red;
+        visibility: hidden;
+        color: $clr-error;
         font-size: 12px;
         margin-bottom: 0.75rem;
     }
@@ -69,4 +85,16 @@
             grid-area: h;
         }
     }
+}
+
+
+//disable the spinners from inputs type numbers
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+    margin: 0; 
 }

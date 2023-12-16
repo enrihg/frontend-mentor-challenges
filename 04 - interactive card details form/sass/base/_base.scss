@@ -3,3 +3,9 @@ body {
     font-size: 1.125rem;
 }
 
+.cards,
+.form,
+.grid-container {
+    max-width: 450px;
+    margin: 0 auto;
+}
