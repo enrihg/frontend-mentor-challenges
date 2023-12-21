@@ -14,11 +14,11 @@
 </head>
 
 <body>
-  <img src="images/logo.svg" alt="Splitter's Logo">
+  <img class="logo" src="images/logo.svg" alt="Splitter's Logo">
   <form class="grid-container">
     <div class="grid-child-1">
       <label for="bill">Bill</label>
-      <input id="bill" type="number">
+      <input id="bill" type="number" placeholder="142.55">
       <div>
         <p>Select Tip %</p>
         <button>5%</button>
@@ -29,16 +29,24 @@
         <button>Custom</button>
       </div>
       <label for="number-of-people">Number of People</label>
-      <input id="number-of-people" type="number">
+      <input id="number-of-people" type="number" placeholder="5">
     </div>
     <div class="grid-child-2">
-      <p>Tip Amount</p>
-      <small>/ person</small>
-      <div>$0.00</div>
-      <p>Total</p>
-      <small>/ person</small>
-      <div>$0.00</div>
-      <button>Reset</button>
+      <div class="flex-container">
+        <div>
+          <p>Tip Amount</p>
+          <small>/ person</small>
+        </div>
+        <div class="total">$4.27</div>
+      </div>
+      <div class="flex-container">
+        <div>
+          <p>Total</p>
+          <small>/ person</small>
+        </div>
+        <div class="total">$32.79</div>
+      </div>
+      <button>RESET</button>
     </div>
   </form>
 </body>
