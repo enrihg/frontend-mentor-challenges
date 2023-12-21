@@ -1,0 +1,19 @@
+body {
+    background-color:#C5E4E7;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+.grid-container {
+    padding: 2rem;
+    background-color: $clr-neutral-100;
+    border-radius: 25px;
+}
+
+.grid-child-2 {
+    background-color: $clr-neutral-900;
+}
+/*
+- Font size (form inputs): 24px
+
+*/
