@@ -60,31 +60,112 @@ body {
   display: block;
   margin: 3.125rem auto 2.5rem;
 }
+@media screen and (width > 800px) {
+  .logo {
+    margin: 10rem auto 5.5rem;
+  }
+}
 
 small {
   font-size: 13px;
 }
 
+button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.grid-child-1 button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(183, 100%, 15%);
+  font-size: 1.5rem;
+  padding: 6px 0 6px 0;
+}
+.grid-child-1 button:last-of-type {
+  color: hsl(186, 14%, 43%);
+  background-color: hsl(189, 41%, 97%);
+}
+
+.grid-child-2 button {
+  width: 100%;
+  padding: 9px 0 9px 0;
+  margin-top: 2.25rem;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(172, 67%, 45%);
+}
+@media screen and (width > 800px) {
+  .grid-child-2 button {
+    position: relative;
+    top: 80px;
+  }
+}
+
 .grid-container {
+  display: grid;
+  margin: 0 auto;
   padding: 2rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 25px;
+  max-width: 30rem;
+}
+@media screen and (width > 800px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    max-width: 57.5rem;
+    column-gap: 3rem;
+  }
+}
+.grid-container .grid-container {
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 1rem;
+  margin: 1rem 0 2rem 0;
+  padding: 0;
+}
+@media screen and (width > 800px) {
+  .grid-container .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 57.5rem;
+    margin-bottom: 2.5rem;
+  }
 }
 
 .grid-child-1 label,
 .grid-child-1 p {
   display: block;
+  margin-bottom: 6px;
   color: hsl(186, 14%, 43%);
 }
 .grid-child-1 input {
   width: 100%;
   margin-bottom: 2rem;
+  padding: 0.375rem 1rem 0.375rem 1rem;
+  appearance: textfield;
   background-image: url("/images/icon-dollar.svg");
   background-repeat: no-repeat;
+  background-position: 1rem;
   border: none;
   border-radius: 5px;
   background-color: hsl(189, 41%, 97%);
-  appearance: textfield;
+  color: hsl(183, 100%, 15%);
+  font-size: 1.5rem;
+  text-align: end;
+}
+.grid-child-1 input:nth-of-type(2) {
+  background-image: url(/images/icon-person.svg);
+}
+@media screen and (width > 800px) {
+  .grid-child-1 input:nth-of-type(1) {
+    margin-bottom: 2.5rem;
+  }
+  .grid-child-1 input:nth-of-type(2) {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (width > 800px) {
+  .grid-child-1 {
+    padding: 1rem 0 0 1rem;
+  }
 }
 
 .grid-child-2 {
@@ -102,35 +183,23 @@ small {
   font-size: 2rem;
   color: hsl(172, 67%, 45%);
 }
+@media screen and (width > 800px) {
+  .grid-child-2 .total {
+    font-size: 3rem;
+  }
+}
 .grid-child-2 .flex-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .grid-child-2 .flex-container:first-of-type {
   margin-bottom: 1.5rem;
 }
-
-button {
-  border: none;
-  border-radius: 5px;
-}
-
-.grid-child-1 button {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(183, 100%, 15%);
-  font-size: 1.5rem;
-}
-.grid-child-1 button:last-of-type {
-  color: hsl(184, 14%, 56%);
-  background-color: hsl(189, 41%, 97%);
-}
-
-.grid-child-2 button {
-  width: 100%;
-  padding: 8px 0 8px 0;
-  margin-top: 2.25rem;
-  color: hsl(183, 100%, 15%);
-  background-color: hsl(172, 67%, 45%);
+@media screen and (width > 800px) {
+  .grid-child-2 {
+    padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
